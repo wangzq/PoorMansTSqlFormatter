@@ -119,7 +119,6 @@ namespace PoorMansTSqlFormatterCmdLine
             }
             catch (InvalidOperationException)
             {
-                Console.InputEncoding = Encoding.UTF8;
                 stdInput = System.Console.In.ReadToEnd();
             }
 
@@ -199,7 +198,6 @@ namespace PoorMansTSqlFormatterCmdLine
                     }
                     else
                     {
-                        Console.OutputEncoding = Encoding.UTF8;
                         Console.Out.WriteLine(formattedOutput);
                     }
                 }
